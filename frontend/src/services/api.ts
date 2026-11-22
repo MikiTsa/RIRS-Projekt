@@ -1,4 +1,4 @@
-const API_ROOT = "/api";
+const API_ROOT = `${import.meta.env.VITE_API_URL ?? ""}/api`;
 
 export function getToken() {
   return localStorage.getItem("workit-token");
